@@ -1,0 +1,26 @@
+[alias]
+	co = checkout
+	s = status
+	br = branch
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	la = "!git config -l | grep alias | cut -c 7-"	
+	brs = "!git for-each-ref --sort=committerdate refs/heads/ --format='%(color:green)%(committerdate:short) %(color:yellow)%(authorname) %(color:white)%(refname:short)'"
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+
+[push]
+	default = simple
+
+[core]
+	excludesfile = /home/alassiter/.gitignore
+
+[pager]
+	stash = false
+
+[color]
+	ui = auto
+
+[color "status"]
+	header = yellow

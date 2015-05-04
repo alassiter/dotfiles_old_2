@@ -1,5 +1,13 @@
-# Compiled Python files
-*.pyc
+# For Ruby on rails projects
+custom_plan.rb
+zeus.json
+.pryrc
+config/database.yml
+ideas/
+
+# In various projects, this is a personal dev folder
+lib/dev/
+lib/tasks/dev/
 
 # Folder view configuration files
 .DS_Store
