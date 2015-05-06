@@ -1,3 +1,7 @@
+# Bash aliases
+alias ll="ls -l --color"
+alias la="ls -la --color"
+
 # Shortcuts
 alias home='cd ~'
 alias dev='cd ~/Development'
