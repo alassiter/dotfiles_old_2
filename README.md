@@ -1,5 +1,8 @@
 # Anthony's dotfiles
 
+## Please Note
+I am new to dotfiles. This fork is for my personal use, but if you like it, you can fork it. I've moved several files into the reference_backups that were originally in the root level.
+
 ## Installation
 
 ### Using Git and the bootstrap script
